@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sıla Göktaş: İnteraktif Deneyim 🌈</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Comic+Neue:wght@700&display=swap" rel="stylesheet>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Header -->
+        <header class="hero">
+            <h1 class="title animate__animated animate__tada">SILA GÖKTAŞ</h1>
+            <p class="slogan">"158cm Boy, 158 Işık Yılı Hayal!"</p>
+            <div class="height-meter" id="heightMeter">📏</div>
+        </header>
+
+        <!-- Oyun Alanı -->
+        <section class="game-section">
+            <button class="action-btn" onclick="startPenguinGame()">🐧 Penguen Zıplat</button>
+            <button class="action-btn" onclick="showQuiz()">❓ Sıla Bilgi Yarışması</button>
+            <div id="gameContainer"></div>
+        </section>
+
+        <!-- Gizli Özellikler -->
+        <div class="easter-egg">
+            <input type="text" id="secretCode" placeholder="🔐 Gizli Kod Yaz">
+            <button onclick="checkSecretCode()">🚀 Gönder</button>
+        </div>
+    </div>
+
+    <!-- Toast Mesaj -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Scriptler -->
+    <script src="script.js"></script>
+</body>
+</html>
