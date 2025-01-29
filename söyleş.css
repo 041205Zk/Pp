@@ -1,0 +1,58 @@
+:root {
+    --primary: #ff4757;
+    --secondary: #2ed573;
+    --accent: #ffa502;
+}
+
+body {
+    background: radial-gradient(circle, #ffeaa7, #81ecec);
+    font-family: 'Comic Neue', cursive;
+    overflow-x: hidden;
+}
+
+.title {
+    font-family: 'Rubik Bubbles', cursive;
+    color: var(--primary);
+    text-shadow: 3px 3px 0 white;
+    font-size: 4em;
+}
+
+.height-meter {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s;
+    display: grid;
+    place-items: center;
+    font-size: 3em;
+}
+
+.action-btn {
+    background: var(--secondary);
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.2em;
+}
+
+.action-btn:hover {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    display: none;
+}
